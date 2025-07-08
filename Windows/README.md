@@ -15,7 +15,12 @@ This PowerShell script automates reinstalling your most-used apps after a fresh 
 
 1. **Run in Dry-Run Mode (safe preview):**
 ```powershell
-.\Install-AllApps.ps1
+.\Install-AllApps.ps1 -TestMode
+```
+
+2. **Actual Run (Remove Apps)**
+```powershell
+.\Install-AllApps.ps1 -TestMode:$false
 ```
 
 ## 🧹 Debloat Windows 11 (Optional but Recommended)
