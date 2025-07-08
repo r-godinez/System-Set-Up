@@ -1,3 +1,5 @@
+# Template Script
+
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 param (
@@ -10,7 +12,6 @@ param (
 $logFile = ".\InstallApps-Log.txt"
 Start-Transcript -Path $logFile -Append
 
-
 Write-Host "=== System Reinstall Setup ===" -ForegroundColor Cyan
 
 if ($TestMode) {
@@ -21,11 +22,10 @@ if ($TestMode) {
 
 Write-Host "Logging to: $logFile" -ForegroundColor DarkGray
 Pause
-
 # -------------------------------
 # Step 1: winget import
 # -------------------------------
-$wingetJson = ".\winget-apps.json"
+$wingetJson = "PATH-TO-WINGET.JSON"
 Write-Host "`n=== Step 1: Install apps from winget-apps.json ===" -ForegroundColor Cyan
 Pause
 
@@ -47,26 +47,11 @@ if (Test-Path $wingetJson) {
 Write-Host "`n=== Step 2: Install additional Winget apps ===" -ForegroundColor Cyan
 Pause
 
+# Add --id for winget app you want to install
 $manualApps = @(
-    "Microsoft.OneDrive",
-    "Apple.iTunes",
-    "Spotify.Spotify",
-    "RazerInc.RazerInstaller.Synapse4",
-    "Intel.IntelDriverAndSupportAssistant",
-    "GIGABYTE.BIOS"
-    "Corsair.iCUE.5",
-    "Guru3D.Afterburner",
-    "REALiX.HWiNFO",
-    # Nvidia Control Panel
-    "9NF8H0H7WMLT",
-    # Developer Tools
-    "Docker.DockerDesktop",
-    "Docker.DockerCompose",
-    "Docker.DockerCLI",
-    "Git.Git",
-    "GitHub.GitHubDesktop",
-    "Hashicorp.Terraform",
-    "GoLang.Go"
+    "Microsoft.Office",
+    "Mozilla.Firefox",
+    "Google.Chrome"
 )
 
 foreach ($app in $manualApps) {
@@ -84,6 +69,7 @@ foreach ($app in $manualApps) {
 Write-Host "`n=== Step 3: Manual installs required ===" -ForegroundColor Magenta
 Pause
 
+# Add apps not found on winget
 $manualOnlyApps = @(
     @{ Name = "GIGABYTE SSD Firmware Update Tool"; Url = "https://www.gigabyte.com/Support/Utility" },
     @{ Name = "GIGABYTE Performance Library"; Url = "https://www.gigabyte.com/MicroSite/185/download/utility_easytune.htm" },
@@ -97,6 +83,7 @@ $manualOnlyApps = @(
     @{ Name = "AV1, MPEG2, HEIF Extensions (MSIX)"; Url = "https://apps.microsoft.com" }
 )
 
+# Displays apps alongside their corresponding URL
 foreach ($app in $manualOnlyApps) {
     Write-Host "* $($app.Name)" -ForegroundColor DarkYellow
     Write-Host "  ↳ $($app.Url)" -ForegroundColor DarkGray

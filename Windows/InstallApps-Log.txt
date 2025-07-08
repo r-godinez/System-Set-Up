@@ -1,0 +1,79 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250708121254
+Username: MAGICBOX\rickg
+RunAs User: MAGICBOX\rickg
+Configuration Name: 
+Machine: MAGICBOX (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command Import-Module 'c:\Users\rickg\.vscode\extensions\ms-vscode.powershell-2025.2.0\modules\PowerShellEditorServices\PowerShellEditorServices.psd1'; Start-EditorServices -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '2025.2.0' -BundledModulesPath 'c:\Users\rickg\.vscode\extensions\ms-vscode.powershell-2025.2.0\modules' -EnableConsoleRepl -StartupBanner "PowerShell Extension v2025.2.0
+Copyright (c) Microsoft Corporation.
+
+https://aka.ms/vscode-powershell
+Type 'help' to get help.
+" -LogLevel 'Warning' -LogPath 'c:\Users\rickg\AppData\Roaming\Code\logs\20250708T094904\window1\exthost\ms-vscode.powershell' -SessionDetailsPath 'c:\Users\rickg\AppData\Roaming\Code\User\globalStorage\ms-vscode.powershell\sessions\PSES-VSCode-4352-389491.json' -FeatureFlags @() 
+Process ID: 21360
+PSVersion: 5.1.26100.4202
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.4202
+BuildVersion: 10.0.26100.4202
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\InstallApps-Log.txt
+=== System Reinstall Setup ===
+Test mode is ENABLED (apps will NOT be installed)
+Logging to: .\InstallApps-Log.txt
+
+=== Step 1: Install apps from winget-apps.json ===
+[TEST MODE] Would import apps from: .\winget-apps.json
+
+=== Step 2: Install additional Winget apps ===
+[TEST MODE] Would install: Microsoft.OneDrive
+[TEST MODE] Would install: Apple.iTunes
+[TEST MODE] Would install: Spotify.Spotify
+[TEST MODE] Would install: RazerInc.RazerInstaller.Synapse4
+[TEST MODE] Would install: Intel.IntelDriverAndSupportAssistant
+[TEST MODE] Would install: GIGABYTE.BIOS
+[TEST MODE] Would install: Corsair.iCUE.5
+[TEST MODE] Would install: Guru3D.Afterburner
+[TEST MODE] Would install: REALiX.HWiNFO
+[TEST MODE] Would install: 9NF8H0H7WMLT
+[TEST MODE] Would install: Docker.DockerDesktop
+[TEST MODE] Would install: Docker.DockerCompose
+[TEST MODE] Would install: Docker.DockerCLI
+[TEST MODE] Would install: Git.Git
+[TEST MODE] Would install: GitHub.GitHubDesktop
+[TEST MODE] Would install: Hashicorp.Terraform
+[TEST MODE] Would install: GoLang.Go
+
+=== Step 3: Manual installs required ===
+* GIGABYTE SSD Firmware Update Tool
+  â†³ https://www.gigabyte.com/Support/Utility
+* GIGABYTE Performance Library
+  â†³ https://www.gigabyte.com/MicroSite/185/download/utility_easytune.htm
+* GIGABYTE Storage Library
+  â†³ https://www.gigabyte.com/MicroSite/185/download/utility_sataraid.htm
+* Razer Axon
+  â†³ https://www.razer.com/axon
+* Intel Serial IO / Chipset
+  â†³ https://www.intel.com/content/www/us/en/download-center/home.html
+* Realtek Audio Driver / Control
+  â†³ https://www.realtek.com/en/component/zoo/category/pc-audio-codecs-high-definition-audio-codecs-software
+* Realtek Ethernet Controller
+  â†³ https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software
+* Samsung Magician
+  â†³ https://semiconductor.samsung.com/consumer-storage/magician/
+* Corsair Device Control Service
+  â†³ https://www.corsair.com/us/en/icue
+* AV1, MPEG2, HEIF Extensions (MSIX)
+  â†³ https://apps.microsoft.com
+
+You can reinstall these apps manually via the links above.
+
+=== All Done! Reboot your PC and enjoy your setup. ===
+**********************
+Windows PowerShell transcript end
+End time: 20250708121520
+**********************
