@@ -1,6 +1,6 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20250708121254
+Start time: 20250711125140
 Username: MAGICBOX\rickg
 RunAs User: MAGICBOX\rickg
 Configuration Name: 
@@ -10,21 +10,21 @@ Copyright (c) Microsoft Corporation.
 
 https://aka.ms/vscode-powershell
 Type 'help' to get help.
-" -LogLevel 'Warning' -LogPath 'c:\Users\rickg\AppData\Roaming\Code\logs\20250708T094904\window1\exthost\ms-vscode.powershell' -SessionDetailsPath 'c:\Users\rickg\AppData\Roaming\Code\User\globalStorage\ms-vscode.powershell\sessions\PSES-VSCode-4352-389491.json' -FeatureFlags @() 
-Process ID: 21360
-PSVersion: 5.1.26100.4202
+" -LogLevel 'Warning' -LogPath 'c:\Users\rickg\AppData\Roaming\Code\logs\20250711T122605\window1\exthost\ms-vscode.powershell' -SessionDetailsPath 'c:\Users\rickg\AppData\Roaming\Code\User\globalStorage\ms-vscode.powershell\sessions\PSES-VSCode-8544-397506.json' -FeatureFlags @() 
+Process ID: 24952
+PSVersion: 5.1.26100.4652
 PSEdition: Desktop
-PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.4202
-BuildVersion: 10.0.26100.4202
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.4652
+BuildVersion: 10.0.26100.4652
 CLRVersion: 4.0.30319.42000
 WSManStackVersion: 3.0
 PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
-Transcript started, output file is .\InstallApps-Log.txt
+Transcript started, output file is .\Logs\InstallApps-Log.txt
 === System Reinstall Setup ===
 Test mode is ENABLED (apps will NOT be installed)
-Logging to: .\InstallApps-Log.txt
+Logging to: .\Logs\InstallApps-Log.txt
 
 === Step 1: Install apps from winget-apps.json ===
 [TEST MODE] Would import apps from: .\winget-apps.json
@@ -47,33 +47,20 @@ Logging to: .\InstallApps-Log.txt
 [TEST MODE] Would install: GitHub.GitHubDesktop
 [TEST MODE] Would install: Hashicorp.Terraform
 [TEST MODE] Would install: GoLang.Go
+[TEST MODE] Would install: Microsoft.PowerShell
 
 === Step 3: Manual installs required ===
 * GIGABYTE SSD Firmware Update Tool
-  â†³ https://www.gigabyte.com/Support/Utility
-* GIGABYTE Performance Library
-  â†³ https://www.gigabyte.com/MicroSite/185/download/utility_easytune.htm
-* GIGABYTE Storage Library
-  â†³ https://www.gigabyte.com/MicroSite/185/download/utility_sataraid.htm
-* Razer Axon
-  â†³ https://www.razer.com/axon
+  - https://www.gigabyte.com/Support/Utility
 * Intel Serial IO / Chipset
-  â†³ https://www.intel.com/content/www/us/en/download-center/home.html
-* Realtek Audio Driver / Control
-  â†³ https://www.realtek.com/en/component/zoo/category/pc-audio-codecs-high-definition-audio-codecs-software
-* Realtek Ethernet Controller
-  â†³ https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software
+  - https://www.intel.com/content/www/us/en/download-center/home.html
 * Samsung Magician
-  â†³ https://semiconductor.samsung.com/consumer-storage/magician/
-* Corsair Device Control Service
-  â†³ https://www.corsair.com/us/en/icue
-* AV1, MPEG2, HEIF Extensions (MSIX)
-  â†³ https://apps.microsoft.com
+  - https://semiconductor.samsung.com/consumer-storage/magician/
 
 You can reinstall these apps manually via the links above.
 
 === All Done! Reboot your PC and enjoy your setup. ===
 **********************
 Windows PowerShell transcript end
-End time: 20250708121520
+End time: 20250711125143
 **********************
