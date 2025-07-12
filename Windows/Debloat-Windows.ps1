@@ -36,10 +36,6 @@ function Remove-App {
 # Apps to Remove
 # -------------------------------
 $appsToRemove = @(
-    @{ Id = "Microsoft.XboxGamingOverlay"; Desc = "Xbox Game Bar" },
-    @{ Id = "Microsoft.Xbox.TCUI"; Desc = "Xbox TCUI" },
-    @{ Id = "Microsoft.XboxGameCallableUI"; Desc = "Xbox Cal lable UI" },
-    @{ Id = "Microsoft.XboxSpeechToTextOverlay"; Desc = "Xbox Speech Overlay" },
     @{ Id = "Microsoft.ZuneMusic"; Desc = "Groove Music" },
     @{ Id = "Microsoft.ZuneVideo"; Desc = "Movies & TV" },
     @{ Id = "Microsoft.People"; Desc = "People App" },
@@ -50,7 +46,10 @@ $appsToRemove = @(
     @{ Id = "Microsoft.MicrosoftSolitaireCollection"; Desc = "Solitaire" },
     @{ Id = "Microsoft.SkypeApp"; Desc = "Skype" },
     @{ Id = "Microsoft.Todos"; Desc = "To Do" },
-    @{ Id = "Microsoft.YourPhone"; Desc = "Phone Link" }
+    @{ Id = "Microsoft.YourPhone"; Desc = "Phone Link" },
+    @{ Id = "MSIX\Microsoft.GetHelp_10.2409.22951.0_x64__8wekyb3d8bbwe"; Desc = "Get Help" }
+
+    
 )
 
 # -------------------------------

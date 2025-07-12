@@ -49,17 +49,17 @@ Write-Host "`n=== Step 2: Install additional Winget apps ===" -ForegroundColor C
 Pause
 
 $manualApps = @(
-    "Microsoft.OneDrive",
-    "Apple.iTunes",
+    "Microsoft.OneDrive",   # OneDrive
+    "Apple.iTunes",         # iTunes
     "Spotify.Spotify", # can't be ran as admin
     "RazerInc.RazerInstaller.Synapse4", # can't be ran as admin
     "Intel.IntelDriverAndSupportAssistant",
-    "GIGABYTE.BIOS"
-    "Corsair.iCUE.5",
-    "Guru3D.Afterburner",
-    "REALiX.HWiNFO",
-    # Nvidia Control Panel
-    "9NF8H0H7WMLT",
+    "GIGABYTE.BIOS"         
+    "Corsair.iCUE.5",       # Corsair RAM
+    "Guru3D.Afterburner",   # MSI Afterburner
+    "REALiX.HWiNFO",        
+    #"9NF8H0H7WMLT",         # Nvidia Control Panel (already pre-installed)
+    "Proton.ProtonVPN",     # Proton VPN
     # Developer Tools
     "Docker.DockerDesktop",
     "Docker.DockerCompose",
@@ -68,7 +68,7 @@ $manualApps = @(
     "GitHub.GitHubDesktop",
     "Hashicorp.Terraform",
     "GoLang.Go",
-"Microsoft.PowerShell"
+    "Microsoft.PowerShell"
 # add cherrytree and logi+ and chrome, failed in json file
 )
 
