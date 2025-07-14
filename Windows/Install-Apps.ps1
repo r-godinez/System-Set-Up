@@ -4,13 +4,11 @@ param (
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-
 # -------------------------------
 # Setup
 # -------------------------------
 $logFile = ".\Logs\InstallApps-Log.txt"
 Start-Transcript -Path $logFile -Append
-
 
 Write-Host "=== System Reinstall Setup ===" -ForegroundColor Cyan
 
