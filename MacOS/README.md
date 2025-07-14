@@ -6,16 +6,7 @@ This script automates the installation of Homebrew packages (CLI tools) and macO
 
 ## 🚀 How to Use
 
-### 1. Install Homebrew (if not already installed)
-
-Paste this in your Terminal:
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
----
-
-### 2. Clone or Download This Repository
+### 1. Clone or Download This Repository
 
 Using Git:
 ```bash
@@ -27,10 +18,10 @@ Or manually download and unzip the `.zip` file of this repository.
 
 ---
 
-### 3. Make the Script Executable
+### 2. Make the Script Executable
 
 ```bash
-chmod +x brew-install.sh
+chmod +x set-up.sh
 ```
 
 ---
@@ -38,7 +29,7 @@ chmod +x brew-install.sh
 ### 4. Run the Script
 
 ```bash
-./brew-install.sh
+./set-up.sh
 ```
 
 ---
@@ -50,7 +41,7 @@ Includes:
 - ansible
 - rust
 - go
-- python@3.11, @3.12, @3.13
+- python@3.12
 - node
 - llvm
 - and many more...
@@ -67,13 +58,13 @@ Includes:
 - Zoom
 - and others...
 
-> See the full list in `brew-install.sh`
+> See the full list in `set-up.sh`
 
 ---
 
 ## 🛠 Customize the Script
 
-Open `brew-install.sh` and:
+Open `set-up.sh` and:
 - Remove any packages you don’t need
 - Add new ones using:
 
@@ -97,13 +88,3 @@ This removes outdated versions and frees up disk space.
 ## 🧰 Requirements
 
 - macOS Monterey
-- Xcode Command Line Tools:
-```bash
-xcode-select --install
-```
-
----
-
-## ✅ License
-
-MIT — Use, modify, and share freely.
