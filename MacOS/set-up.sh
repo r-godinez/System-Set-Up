@@ -52,7 +52,7 @@ CLI_FORMULAE=(
   rust
   sqlite
   terraform
-  terragrunt
+  #terragrunt
   zsh-completions
   zstd
   kubectl
@@ -62,7 +62,7 @@ CLI_FORMULAE=(
   minikube
   cilium-cli
   dive
-  trivy
+  #trivy
   nmap
   wireshark
   mitmproxy
@@ -81,7 +81,7 @@ done
 
 ### --- GUI Apps / Casks ---
 CASK_APPS=(
-  docker
+  #docker
   iterm2
   visual-studio-code
   postman
@@ -100,7 +100,7 @@ CASK_APPS=(
   microsoft-office
   notion
   powershell
-  protonvpn
+  #protonvpn
   raspberry-pi-imager
   spotify
   virtualbox
