@@ -106,6 +106,7 @@ CASK_APPS=(
   virtualbox
   zoom
   mactex-no-gui
+  gimp
 )
 
 echo -e "${CYAN}🖥️ Installing GUI apps...${NC}"
