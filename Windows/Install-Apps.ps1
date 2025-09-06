@@ -53,11 +53,11 @@ $manualApps = @(
     "RazerInc.RazerInstaller.Synapse4", # can't be ran as admin
     "Intel.IntelDriverAndSupportAssistant",
     "GIGABYTE.BIOS"         
-    "Corsair.iCUE.5",       # Corsair RAM
-    "Guru3D.Afterburner",   # MSI Afterburner
-    "REALiX.HWiNFO",        
+    "Corsair.iCUE.5",       # Corsair RAM     
     #"9NF8H0H7WMLT",         # Nvidia Control Panel (already pre-installed)
     "Proton.ProtonVPN",     # Proton VPN
+    "GIMP.GIMP.3",            # photo editing
+    "Corsair.iCUE.5",       # Corsair RAM
     # Developer Tools
     "Docker.DockerDesktop",
     "Docker.DockerCompose",
@@ -66,7 +66,15 @@ $manualApps = @(
     "GitHub.GitHubDesktop",
     "Hashicorp.Terraform",
     "GoLang.Go",
-    "Microsoft.PowerShell"
+    "Microsoft.PowerShell",
+    # Browsing 
+    "Brave.Brave",
+    "Google.Chrome",
+    "Mozilla.Firefox",
+    # Hardware Monitoring
+    "Guru3D.Afterburner",   # MSI Afterburner
+    "TechPowerUp.GPU-Z"     # TechPowerUp
+    "REALiX.HWiNFO"        # HWiNFO 64
 # add cherrytree and logi+ and chrome, failed in json file
 )
 

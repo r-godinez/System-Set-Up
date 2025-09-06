@@ -2,6 +2,8 @@
 
 This PowerShell script automates reinstalling your most-used apps after a fresh Windows install.
 
+### **RUN AS ADMIN**
+
 ### 🔧 Features
 
 - Restores exported Winget apps
