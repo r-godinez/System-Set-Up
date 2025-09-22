@@ -1,0 +1,341 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250921141857
+Username: MINIBOX\ricardog
+RunAs User: MINIBOX\ricardog
+Configuration Name: 
+Machine: MINIBOX (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13664
+PSVersion: 5.1.26100.6584
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.6584
+BuildVersion: 10.0.26100.6584
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\Logs\InstallApps-Log.txt
+=== System Setup for Windows 11 ===
+Test mode is DISABLED (apps WILL be installed)
+Logging to: .\Logs\InstallApps-Log.txt
+
+=== Step 1: Installing WSL2 ===
+
+--- Enabling WSL2 Features ---
+Enabling WSL feature...
+
+
+Path          :
+Online        : True
+RestartNeeded : False
+
+Enabling Virtual Machine Platform feature...
+Path          :
+Online        : True
+RestartNeeded : False
+
+Setting WSL2 as default version...
+
+[SUCCESS] WSL2 features enabled
+Note: A reboot may be required for WSL2 to work properly
+
+--- WSL2 Installation Complete ---
+
+=== Step 2: Install Winget apps ===
+Installing Microsoft.OneDrive...
+
+Installing Google.GoogleDrive...
+
+Installing Apple.iTunes...
+
+Installing Proton.ProtonVPN...
+
+Installing GIMP.GIMP.3...
+
+Installing Docker.DockerDesktop...
+
+Installing Docker.DockerCompose...
+
+Installing Docker.DockerCLI...
+
+Installing Git.Git...
+
+Installing GitHub.GitHubDesktop...
+
+Installing Hashicorp.Terraform...
+
+Installing GoLang.Go...
+
+Installing Microsoft.PowerShell...
+
+Installing Brave.Brave...
+
+Installing Google.Chrome...
+
+Installing Logitech.OptionsPlus...
+
+Installing Greenshot.Greenshot...
+
+Installing Microsoft.VisualStudioCode...
+
+Installing Anysphere.Cursor...
+
+Installing Mobatek.MobaXterm...
+
+Installing Microsoft.WindowsTerminal...
+
+Installing Notion.Notion...
+
+Installing Guru3D.Afterburner...
+
+Installing TechPowerUp.GPU-Z...
+
+Installing REALiX.HWiNFO...
+
+
+=== Step 3: Manual installs required ===
+* Spotify
+  - https://www.spotify.com/download/windows/
+* CherryTree
+  - https://www.giuspen.com/cherrytree/
+
+You can install these apps manually via the links above.
+
+=== Step 4: Personalizing Windows 11 UI ===
+
+--- Applying UI Personalization ---
+
+Setting Dark Mode...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize\AppsUseLightTheme = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize\SystemUsesLightTheme = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize\ColorPrevalence = 1
+
+Setting Accent Color to Metal Blue...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize\AccentColor = -12877116
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize\AutoColorization = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize\ColorPrevalence = 1
+[SUCCESS] Set accent color registry values
+Note: You may need to manually change accent color in Settings > Personalization > Colors
+
+Customizing Taskbar...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarAl = 1
+Disabling widgets...
+Set-ItemProperty : Attempted to perform an unauthorized operation.
+At C:\Users\rgodinez\Downloads\System-Set-Up-main\System-Set-Up-main\Windows 11\Laptop\Set-Up-Laptop.ps1:141 char:13
++             Set-ItemProperty -Path $Path -Name $Name -Value $Value -T ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (TaskbarDa:String) [Set-ItemProperty], UnauthorizedAccessException
+    + FullyQualifiedErrorId : System.UnauthorizedAccessException,Microsoft.PowerShell.Commands.SetItemPropertyCommand
+Set-ItemProperty : Attempted to perform an unauthorized operation.
+At C:\Users\rgodinez\Downloads\System-Set-Up-main\System-Set-Up-main\Windows 11\Laptop\Set-Up-Laptop.ps1:141 char:13
++             Set-ItemProperty -Path $Path -Name $Name -Value $Value -T ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (TaskbarDa:String) [Set-ItemProperty], UnauthorizedAccessException
+    + FullyQualifiedErrorId : System.UnauthorizedAccessException,Microsoft.PowerShell.Commands.SetItemPropertyCommand
+
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarDa = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarWi = 0
+[SUCCESS] Widget registry settings applied
+Note: You may need to manually disable widgets in Settings > Personalization > Taskbar > Widgets
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarMn = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ShowTaskViewButton = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarSi = 0
+
+Configuring Search...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Search\SearchboxTaskbarMode = 0
+
+Customizing Start Menu...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_TrackDocs = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_ShowClassicMode = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_IrisMenu = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_ShowRecommendations = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_AccountNotifications = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_Layout = 1
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_ShowSettingsFolder = 1
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_ShowFileExplorerFolder = 1
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_ShowDownloadsFolder = 1
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_ShowNetworkFolder = 1
+
+Configuring File Explorer...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Hidden = 1
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\HideFileExt = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\LaunchTo = 1
+
+Configuring Desktop...
+[SUCCESS] Set HKCU:\Control Panel\Desktop\UserPreferencesMask = 158 30 7 128 18 0 0 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\VisualFXSetting = 2
+
+Configuring Context Menu...
+
+Configuring Notifications...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\NOC_GLOBAL_SETTING_TOAST_SIZE_ENABLED = 1
+
+Configuring Performance Settings...
+
+Configuring Lock Screen...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Lock Screen\Creative\LockScreenOption = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\RotatingLockScreenEnabled = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\SubscribedContent-310093Enabled = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\SubscribedContent-338389Enabled = 0
+
+Configuring Device Usage...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\SubscribedContent-338387Enabled = 1
+
+Setting Display Scale...
+[SUCCESS] Set HKCU:\Control Panel\Desktop\LogPixels = 120
+
+Setting Power Mode...
+[SUCCESS] Set HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\PowerThrottling = 0
+
+Setting 24-hour time format...
+[SUCCESS] Set HKCU:\Control Panel\International\sTimeFormat = HH:mm:ss
+
+Note: Registry changes have been applied.
+Some settings may require a restart of Windows Explorer or a reboot to take effect.
+
+--- UI Personalization Complete ---
+Note: Some changes may require a reboot to take full effect.
+
+=== MANUAL SETTINGS REQUIRED ===
+The following settings need to be changed manually:
+
+1. ACCENT COLOR:
+   - Right-click on desktop > Personalize
+   - OR: Settings > Personalization > Colors
+   - Select 'Metal Blue' or your preferred accent color
+   - Toggle 'Show accent color on Start and taskbar' ON
+
+2. DISABLE WIDGETS:
+   - Right-click on taskbar > Taskbar settings
+   - OR: Settings > Personalization > Taskbar
+   - Turn OFF 'Widgets' toggle
+
+3. VERIFY OTHER SETTINGS:
+   - Check that Dark mode is enabled
+   - Verify taskbar is centered
+   - Confirm search box is hidden
+
+If registry changes don't apply automatically:
+1. Restart Windows Explorer (Ctrl+Shift+Esc > Windows Explorer > Restart)
+2. Or reboot your computer
+3. Or manually change in Settings > Personalization
+
+=== Step 4.5: Managing Taskbar and Desktop ===
+Removing all apps from taskbar...
+[SUCCESS] Cleared taskbar
+[WARNING] Brave not found in common locations
+Adding Terminal to taskbar...
+[WARNING] Could not pin Terminal to taskbar - verb not found
+Clearing desktop shortcuts (except Recycle Bin)...
+Checking desktop path: C:\Users\rgodinez\Desktop
+Checking desktop path: C:\Users\rgodinez\Desktop
+Checking desktop path: C:\Users\Public\Desktop
+[SUCCESS] Cleared 0 desktop shortcuts
+Adding apps to Start menu...
+[SUCCESS] Added Notion to Start menu (shortcut)
+[SUCCESS] Added Cursor to Start menu (shortcut)
+[WARNING] Could not find Bitwarden to add to Start menu
+[SUCCESS] Added Docker Desktop to Start menu (shortcut)
+[SUCCESS] Added GitHub Desktop to Start menu (shortcut)
+[SUCCESS] Added MobaXterm to Start menu (shortcut)
+[WARNING] Could not find Proton VPN to add to Start menu
+[SUCCESS] Added Visual Studio Code to Start menu (shortcut)
+[WARNING] Could not find Outlook to add to Start menu
+
+--- Taskbar and Desktop Management Complete ---
+
+Restarting Windows Explorer to apply taskbar changes...
+[SUCCESS] Windows Explorer restarted
+
+=== Step 5: Removing Unwanted Apps ===
+
+--- Removing Microsoft Apps ---
+Removing Feedback Hub...
+[SUCCESS] Removed Feedback Hub
+Removing Game Assist...
+[SUCCESS] Removed Game Assist
+Removing Ink Handwriting...
+[SUCCESS] Removed Ink Handwriting
+Removing Xbox...
+[SUCCESS] Removed Xbox
+Removing Xbox Live...
+[SUCCESS] Removed Xbox Live
+Removing Start Experiences App...
+[SUCCESS] Removed Start Experiences App
+Removing Solitaire and Casual Games...
+[SUCCESS] Removed Solitaire and Casual Games
+Removing Quick Assist...
+[SUCCESS] Removed Quick Assist
+Removing Microsoft To Do...
+[SUCCESS] Removed Microsoft To Do
+Removing Microsoft Teams...
+[SUCCESS] Removed Microsoft Teams
+Removing Microsoft News...
+[SUCCESS] Removed Microsoft News
+Removing Microsoft Edge...
+[SUCCESS] Removed Microsoft Edge
+Removing Microsoft Bing...
+[SUCCESS] Removed Microsoft Bing
+Removing Microsoft ClipChamp...
+[SUCCESS] Removed Microsoft ClipChamp
+Removing LinkedIn...
+[SUCCESS] Removed LinkedIn
+
+--- Apps Removal Complete ---
+
+=== Step 6: Removing System Components ===
+
+--- Disabling Game Bar ---
+[SUCCESS] Set HKCU:\Software\Microsoft\GameBar\AllowAutoGameMode = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\GameBar\AutoGameModeEnabled = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\GameBar\ShowStartupPanel = 0
+[SUCCESS] Set HKCU:\Software\Microsoft\GameBar\UseNexusForGameBarEnabled = 0
+[SUCCESS] Game Bar disabled
+
+--- System Components Removal Complete ---
+
+=== Step 7: System Configuration ===
+
+--- Renaming PC to 'MiniBox' ---
+Rename-Computer : Skip computer 'MiniBox' with new name 'MiniBox' because the new name is the same as the current name.
+At C:\Users\rgodinez\Downloads\System-Set-Up-main\System-Set-Up-main\Windows 11\Laptop\Set-Up-Laptop.ps1:734 char:9
++         Rename-Computer -NewName $computerName -Force
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MiniBox:String) [Rename-Computer], InvalidOperationException
+    + FullyQualifiedErrorId : NewNameIsOldName,Microsoft.PowerShell.Commands.RenameComputerCommand
+Rename-Computer : Skip computer 'MiniBox' with new name 'MiniBox' because the new name is the same as the current name.
+At C:\Users\rgodinez\Downloads\System-Set-Up-main\System-Set-Up-main\Windows 11\Laptop\Set-Up-Laptop.ps1:734 char:9
++         Rename-Computer -NewName $computerName -Force
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MiniBox:String) [Rename-Computer], InvalidOperationException
+    + FullyQualifiedErrorId : NewNameIsOldName,Microsoft.PowerShell.Commands.RenameComputerCommand
+
+[SUCCESS] PC renamed to 'MiniBox' (reboot required)
+
+--- Renaming Current User Account to 'rgodinez' ---
+Current user: ricardog
+[SUCCESS] User account renamed from 'ricardog' to 'rgodinez'
+Note: You will need to log out and back in for the change to take full effect
+
+--- System Configuration Complete ---
+
+=== Step 8: Creating Settings Refresh Script ===
+
+--- Creating Windows Settings Refresh Script ---
+[SUCCESS] Created refresh script: .\Refresh-WindowsSettings.ps1
+Run this script if accent color or widgets don't apply properly
+
+--- Settings Refresh Script Complete ---
+
+=== All Done! Reboot your PC and enjoy your setup. ===
+
+If accent color or widgets don't change:
+1. Run the Refresh-WindowsSettings.ps1 script
+2. Or restart Windows Explorer manually
+3. Or reboot your computer
+**********************
+Windows PowerShell transcript end
+End time: 20250921142448
+**********************
