@@ -29,6 +29,13 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 Type `Y` when prompted to confirm.
 
+### If download script
+Run following command remove "downloaded from internet" mark
+
+```powershell
+Unblock-File -Path "C:\Path\to\file\Set-Up-Laptop.ps1"
+```
+
 ### Running the Script
 
 1. **Download the script** to your desired location (e.g., `C:\Users\YourUser\Documents\`)
