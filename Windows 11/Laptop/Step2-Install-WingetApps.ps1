@@ -112,7 +112,7 @@ function Install-WingetApp {
                 Write-Host "Installing $AppName (attempt $attempt/$MaxRetries)..." -ForegroundColor Yellow
                 
                 # Use --silent flag for better automation
-                $result = winget install --id $AppId --accept-package-agreements --accept-source-agreements --silent 2>&1
+                winget install --id $AppId --accept-package-agreements --accept-source-agreements --silent 2>&1 | Out-Null
                 
                 if ($LASTEXITCODE -eq 0) {
                     Write-Host "[SUCCESS] Installed $AppName" -ForegroundColor Green
@@ -127,7 +127,7 @@ function Install-WingetApp {
             }
         }
         catch {
-            Write-Host "[ERROR] Failed to install $AppName: $($_.Exception.Message)" -ForegroundColor Red
+            Write-Host "[ERROR] Failed to install $AppName : $($_.Exception.Message)" -ForegroundColor Red
             if ($attempt -lt $MaxRetries) {
                 Write-Host "Retrying in 5 seconds..." -ForegroundColor DarkGray
                 Start-Sleep -Seconds 5
@@ -179,7 +179,8 @@ if (-not (Install-WingetIfNeeded)) {
         @{ Id = "Piriform.CCleaner"; Name = "CCleaner" },
         @{ Id = "JGraph.Draw"; Name = "Draw.io" },
         @{ Id = "RaspberryPiFoundation.RaspberryPiImager"; Name = "Raspberry Pi Imager" },
-        @{ Id = "OpenVPNTechnologies.OpenVPN"; Name = "OpenVPN" }
+        @{ Id = "OpenVPNTechnologies.OpenVPN"; Name = "OpenVPN" },
+        @{ Id = "Python.Python.3.12"; Name = "Python Interpreter" }
     )
     
     Write-Host "`n--- Installing $($appsToInstall.Count) applications via winget ---" -ForegroundColor Yellow
