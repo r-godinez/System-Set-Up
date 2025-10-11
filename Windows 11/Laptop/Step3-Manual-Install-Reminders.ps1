@@ -7,7 +7,8 @@ Pause
 
 $manualOnlyApps = @(
     @{ Name = "Spotify"; Url = "https://www.spotify.com/download/windows/" },
-    @{ Name = "CherryTree"; Url = "https://www.giuspen.com/cherrytree/" }
+    @{ Name = "CherryTree"; Url = "https://www.giuspen.com/cherrytree/" },
+    @{ Name = "Vivado (HW Developer)"; Url = "https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools.html" },
 )
 
 foreach ($app in $manualOnlyApps) {
