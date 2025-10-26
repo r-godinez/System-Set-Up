@@ -95,6 +95,7 @@ CASK_APPS=(
   github
   google-chrome
   google-drive
+  grandperspective
   keka
   kicad
   iterm2
@@ -105,6 +106,7 @@ CASK_APPS=(
   protonvpn
   raspberry-pi-imager
   spotify
+  thunderbird
   virtualbox
   visual-studio-code
 )
