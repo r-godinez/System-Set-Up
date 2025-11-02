@@ -106,7 +106,6 @@ CASK_APPS=(
   protonvpn
   raspberry-pi-imager
   spotify
-  thunderbird
   virtualbox
   visual-studio-code
 )
